@@ -12,13 +12,19 @@
       </ul>
     </div>
   <% end %>
-  <p>Title</p>
-  <%= f.text_field :title %>
+  <div class="field">
+    <%= f.label :title, 'Title' %>
+    <%= f.text_field :title %>
+  </div>
 
-  <p>Body</p>
-  <%= f.text_area :body %>
+  <div class="field">
+    <%= f.label :body, 'Body' %>
+    <%= f.text_area :body %>
+  </div>
 
-  <%= f.submit 'Update Book' %>
+  <div class="actions">
+    <%= f.submit 'Update Book' %>
+  </div>
 <% end %>
 
 <%= link_to 'Show', book_path(@book) %> |
